@@ -1,0 +1,180 @@
+.cartalogo-container {
+  font-family: "Poppins", sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  margin-top: 50px;
+}
+
+h1 {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.mensagem {
+  color: green;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+/* 🌟 ORGANIZAÇÃO DOS FILTROS E ORDENAÇÃO */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+/* Select da marca */
+.filter-header select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background: white;
+  font-size: 14px;
+}
+
+/* Container de botões de ordenação */
+.sort-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botões de ordenação */
+.btn-sort {
+  width: 40px;
+  height: 40px;
+  background: #ffcc00;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.btn-sort:hover {
+  background: white;
+  color: #ffcc00;
+}
+
+/* 🌟 ESTILO DA TABELA */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+th {
+  background-color: #ffcc00;
+  color: white;
+}
+
+tr {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Botões de ação */
+.btn-delete,
+.btn-edit,
+.btn-version {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Botão de excluir */
+.btn-delete {
+  border: 2px solid red;
+  color: red;
+  background: transparent;
+}
+
+.btn-delete:hover {
+  border-color: darkred;
+  color: darkred;
+}
+
+/* Botão de editar */
+.btn-edit {
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  background: transparent;
+}
+
+.btn-edit:hover {
+  border-color: #d4aa00;
+  color: #d4aa00;
+}
+
+/* Botão de versões */
+.btn-version {
+  border: 2px solid #80aaff;
+  color: #80aaff;
+  background: transparent;
+}
+
+.btn-version:hover {
+  border-color: #4d7aff;
+  color: #4d7aff;
+}

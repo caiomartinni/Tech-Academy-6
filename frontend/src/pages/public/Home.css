@@ -1,0 +1,137 @@
+body {
+  background: linear-gradient(-100deg, #bdc3c7, #2c3e50);
+  font-family: "Roboto", sans-serif;
+}
+
+.home-container {
+  margin-top: 20px;
+}
+
+.home-container .carousel-container {
+  margin-bottom: 20px;
+  border-radius: 50px;
+  box-shadow: 10px 8px 14px rgba(0, 0, 0, 0.1),
+    10px 8px 14px rgba(0, 0, 0, 0.06);
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-column {
+  padding: 10px;
+
+  justify-content: center;
+  display: flex;
+}
+
+.custom-card {
+  height: 100%;
+  max-width: 300px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.cardbt {
+  background-color: #ffcc00;
+  color: #ffffff;
+  border: none;
+}
+
+.cardbt:hover {
+  background-color: white;
+}
+
+.escrita1 {
+  text-align: center;
+  color: white;
+}
+
+.custom-card {
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+}
+
+.cardbt:hover {
+  background-color: #ffffff;
+  color: #ffcc00;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background-color: #ffcc00;
+  color: #ffffff;
+  margin: 0 5px;
+  border: none;
+  padding: 10px 15px;
+}
+
+.pagination-btn.active {
+  background-color: #ffffff;
+  color: #ffcc00;
+}
+
+.pagination-btn:hover {
+  background-color: white;
+  color: #ffcc00;
+}
+
+.arrow-btn {
+  background-color: #ffcc00;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.arrow-btn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.arrow-btn:hover {
+  background-color: white;
+  color: #ffcc00;
+}
+
+.pagination-btn {
+  background-color: #ffcc00;
+  color: #ffffff;
+  margin: 0 5px;
+  border: none;
+  padding: 10px 15px;
+}
+
+.pagination-btn.active {
+  background-color: #ffffff;
+  color: #ffcc00;
+}
+
+.home-container {
+  margin-bottom: 20px;
+}

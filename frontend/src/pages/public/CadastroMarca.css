@@ -1,0 +1,111 @@
+.container {
+  font-family: "Poppins", sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.mensagem {
+  color: green;
+  font-size: 16px;
+}
+
+.form-inline {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+th {
+  background-color: #ffcc00;
+  color: white;
+}
+
+tr {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Botão de excluir */
+.btn-delete {
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-delete:hover {
+  border-color: darkred;
+  color: darkred;
+}
+
+/* Botão de editar */
+.btn-edit {
+  background-color: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-edit:hover {
+  border-color: #d4aa00;
+  color: #d4aa00;
+}
