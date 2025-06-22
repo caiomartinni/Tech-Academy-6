@@ -6,6 +6,6 @@
   },
   "scripts": {
     "prepare": "husky",
-    "teste": "cd frontend && npm run end-2-end"
+    "end-2-end": "cd frontend && npm run end-2-end"
   }
 }
