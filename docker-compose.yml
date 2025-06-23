@@ -1,0 +1,45 @@
+services:
+  database:
+    image: mysql:8.0
+    container_name: mysql_db
+    env_file:
+      - ./.env
+    ports:
+      - "3001:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./BackEnd
+    container_name: backend
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - database
+    networks:
+      - app-network
+
+  frontend:
+    build: ./FrontEnd
+    container_name: frontend
+    env_file:
+      - ./frontend/.env
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+volumes:
+  db_data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge
