@@ -11,7 +11,7 @@ test.describe('CRUD de Marcas', () => {
 
     
     await page.click('text=Cadastro Marca');
-    await expect(page.locator('h1')).toHaveText('Cadastro de Marcas');
+    await expect(page.getByRole('heading', { name: 'Cadastro de Marcas' })).toBeVisible();
 
     // Criação
     const nomeMarca = 'MarcaTestE2E';
